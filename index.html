@@ -3,31 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator | Eri</title>
   </head>
   <body>
     <!-- Calculator -->
-    <div class="calculator">
-      <div class="display"></div>
-      <div class="keys">
-        <button class="key--operator" data-action="add">+</button>
-        <button class="key--operator" data-action="subtract">-</button>
-        <button class="key--operator" data-action="multiply">*</button>
-        <button class="key--operator" data-action="divide">/</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>0</button>
-        <button data-action="decimal">.</button>
-        <button data-action="clear">AC</button>
-        <button id="key--equals" data-action="calculate">=</button>
-      </div>
+
+    <div class="wrapper">
+      <section class="display">0</section>
+
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="calc-button double">C</button>
+          <button class="calc-button">&larr;</button>
+          <button class="calc-button">&divide;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button">7</button>
+          <button class="calc-button">8</button>
+          <button class="calc-button">9</button>
+          <button class="calc-button">&times;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button">4</button>
+          <button class="calc-button">5</button>
+          <button class="calc-button">6</button>
+          <button class="calc-button">&minus;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button">1</button>
+          <button class="calc-button">2</button>
+          <button class="calc-button">3</button>
+          <button class="calc-button">&plus;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button triple">0</button>
+          <button id="equals" class="calc-button">&equals;</button>
+        </div>
+      </section>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
